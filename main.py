@@ -21,3 +21,4 @@ def start_symbol_ticker_socket(self, symbol: str):
             callback=self.websocket_event_handler
         )
 
+# TODO: refactor this
