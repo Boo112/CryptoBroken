@@ -23,3 +23,10 @@ def start_symbol_ticker_socket(self, symbol: str):
         )
 
 # TODO: refactor this
+
+def __setitem__(self, key, item):
+        if key in self.attrs:
+            self.attrs[key][0] = item
+        else:
+            self.attrs[key] = [item, key, len(self.attrs)]
+
