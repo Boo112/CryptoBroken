@@ -10,6 +10,7 @@ def __init__(self, key: str, secret: str):
 def cancel_order(self, orderId):
         return self.client.cancel_order(
             symbol=self.get_symbol(),
+# HACK: not the best solution, but works for now
             orderId=orderId
         )
 
