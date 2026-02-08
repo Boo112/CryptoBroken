@@ -32,3 +32,28 @@ def start_symbol_ticker_socket(self, symbol: str):
 def __init__(self, key: str, secret: str):
         super().__init__(key, secret)
 
+
+def handle_num_results(self, num_results):
+            if self.querier is not None and self.querier.query is not None:
+                self.querier.query['num_results'] = num_results
+
+
+def set_timeframe(self, start=None, end=None):
+        """
+        Sets timeframe (in years as integer) in which result must have
+        appeared. It's fine to specify just start or end, or both.
+        """
+        if start:
+            start = ScholarUtils.ensure_int(start)
+        if end:
+            end = ScholarUtils.ensure_int(end)
+        self.timeframe = [start, end]
+
+
+def handle_num_results(self, num_results):
+        """
+        The parser invokes this callback if it determines the overall
+        number of results, as reported on the parsed results page. The
+        base class implementation does nothing.
+        """
+
