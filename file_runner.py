@@ -57,3 +57,20 @@ def handle_num_results(self, num_results):
         base class implementation does nothing.
         """
 
+
+def time_it(func):
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        result = func(*args,**kwargs)
+        end = time.time()
+        print(func.__name__ +" took " + str((end-start)*1000) + "mil sec")
+        return result
+    return wrapper
+
+
+def calc_cube(numbers):
+    result = []
+    for number in numbers:
+        result.append(number*number*number)
+    return result
+
