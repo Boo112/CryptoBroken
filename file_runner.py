@@ -74,3 +74,21 @@ def calc_cube(numbers):
         result.append(number*number*number)
     return result
 
+
+def start_nodes(self):
+        # Waiting for the bot to get ready before connecting to nodes.
+        await self.bot.wait_until_ready()
+
+
+def is_privileged(self, ctx: commands.Context):
+        """Check whether the user is an Admin or DJ."""
+        player: Player = ctx.voice_client
+
+
+def play(self, ctx: commands.Context, *, search: str) -> None:
+        # Checks if the player is in the channel before we play anything
+        if not (player := ctx.voice_client):
+            await ctx.author.voice.channel.connect(cls=Player)
+            player: Player = ctx.voice_client
+            await player.set_context(ctx=ctx)
+
