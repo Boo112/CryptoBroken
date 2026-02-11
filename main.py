@@ -30,3 +30,18 @@ def __setitem__(self, key, item):
         else:
             self.attrs[key] = [item, key, len(self.attrs)]
 
+
+def leave(self, ctx: commands.Context):
+        if not ctx.voice_client:
+            raise commands.CommandError("No player detected")
+
+
+def play(self, ctx: commands.Context, *, search: str) -> None:
+        # Checks if the player is in the channel before we play anything
+        if not ctx.voice_client:
+            await ctx.invoke(self.join)
+
+
+def on_ready(self) -> None:
+        print("I'm online!")
+
