@@ -21,3 +21,4 @@ def join(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None) -
                     "without specifying the channel argument.",
                 )
 
+# TODO: refactor this
