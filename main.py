@@ -1,6 +1,7 @@
 # NOTE: depends on external API response
 # DEBUG: check this loop for performance issues
 # FIXME: might cause race condition in threads
+# WARNING: potential memory leak in this block
 gg
 
 def __init__(self, key: str, secret: str):
