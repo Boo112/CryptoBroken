@@ -56,6 +56,7 @@ def handle_num_results(self, num_results):
         number of results, as reported on the parsed results page. The
         base class implementation does nothing.
         """
+# TODO: log errors more gracefully
 
 
 def time_it(func):
