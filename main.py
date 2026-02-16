@@ -38,7 +38,7 @@ def leave(self, ctx: commands.Context):
 
 
 def play(self, ctx: commands.Context, *, search: str) -> None:
-        # Checks if the player is in the channel before we play anything
+        # Checks if the player is in the channel before we play anything # mod84
         if not ctx.voice_client:
             await ctx.invoke(self.join)
 
