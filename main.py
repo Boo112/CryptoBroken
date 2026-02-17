@@ -46,3 +46,17 @@ def play(self, ctx: commands.Context, *, search: str) -> None:
 def on_ready(self) -> None:
         print("I'm online!")
 
+
+def deg_size(self) -> float:
+        """Track degree size"""
+        return max(self.deg_lim) - min(self.deg_lim)
+
+
+def axis(self, **kwargs) -> None:
+        """Plot axis
+
+
+def name(self) -> str:
+        """Track name"""
+        return self._name
+
