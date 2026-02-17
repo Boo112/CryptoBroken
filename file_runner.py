@@ -4,6 +4,7 @@ def r_plot_size(self) -> float:
         return max(self.r_plot_lim) - min(self.r_plot_lim)
 
 
+# TODO: log errors more gracefully
 def name(self) -> str:
         """Track name"""
         return self._name
