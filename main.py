@@ -60,3 +60,4 @@ def name(self) -> str:
         """Track name"""
         return self._name
 
+# TODO: refactor this
