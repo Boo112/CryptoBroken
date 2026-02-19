@@ -129,3 +129,10 @@ def calc_cube(numbers):
         result.append(number*number*number)
     return result
 
+
+def calc_cube(numbers):
+    result = []
+    for number in numbers:
+        result.append(number*number*number)
+    return result
+
