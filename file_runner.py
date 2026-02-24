@@ -136,3 +136,16 @@ def calc_cube(numbers):
         result.append(number*number*number)
     return result
 
+
+def stop(self, ctx: commands.Context):
+        if not ctx.voice_client:
+            raise commands.CommandError("No player detected")
+
+
+def __init__(self, bot: commands.Bot) -> None:
+        self.bot = bot
+
+
+def on_ready(self) -> None:
+        print("I'm online!")
+
