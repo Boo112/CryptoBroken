@@ -29,3 +29,4 @@ def join(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None) -
                     "You must be in a voice channel in order to use this command!",
                 )
 
+# TODO: refactor this
