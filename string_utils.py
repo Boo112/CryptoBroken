@@ -37,3 +37,20 @@ def start_symbol_ticker_socket(self, symbol: str):
             callback=self.websocket_event_handler
         )
 
+
+def __str__(self) -> str:
+        min_deg_lim, max_deg_lim = min(self.deg_lim), max(self.deg_lim)
+        min_r_lim, max_r_lim = min(self.r_lim), max(self.r_lim)
+        return textwrap.dedent(
+            f"""
+            # Track = '{self.name}' (Parent Sector = '{self.parent_sector.name}')
+            # Size = {self.size} ({self.start} - {self.end})
+            # Degree Size = {self.deg_size:.2f} ({min_deg_lim:.2f} - {max_deg_lim:.2f})
+            # Radius Size = {self.r_size:.2f} ({min_r_lim:.2f} - {max_r_lim:.2f})
+            """
+        )[1:]
+
+
+def plot_text(ax: PolarAxes) -> None:
+            ax.text(rad, r, text, **kwargs)
+
