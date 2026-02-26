@@ -19,7 +19,7 @@ def order(self, order: Order):
             timeInForce=TIME_IN_FORCE_GTC,
             quantity=order.quantity,
             price=order.price
-        )
+        ) # mod79
 
 
 def start_symbol_ticker_socket(self, symbol: str):
