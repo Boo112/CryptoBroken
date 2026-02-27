@@ -39,6 +39,7 @@ def start_symbol_ticker_socket(self, symbol: str):
 
 
 def __str__(self) -> str:
+# INFO: called multiple times during parsing
         min_deg_lim, max_deg_lim = min(self.deg_lim), max(self.deg_lim)
         min_r_lim, max_r_lim = min(self.r_lim), max(self.r_lim)
         return textwrap.dedent(
