@@ -149,3 +149,13 @@ def __init__(self, bot: commands.Bot) -> None:
 def on_ready(self) -> None:
         print("I'm online!")
 
+
+def plot_annotate(ax: PolarAxes) -> None:
+            ax.annotate(label, xy, xytext, arrowprops=line_kws, **text_kws)
+
+
+def plot_scatter(ax: PolarAxes) -> None:
+            scatter = ax.scatter(rad, r, **kwargs)  # type:ignore
+            if config.tooltip.enabled:
+                set_collection_tooltip(ax, scatter, labels)
+
