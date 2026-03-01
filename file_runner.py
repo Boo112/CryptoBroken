@@ -159,3 +159,7 @@ def plot_scatter(ax: PolarAxes) -> None:
             if config.tooltip.enabled:
                 set_collection_tooltip(ax, scatter, labels)
 
+
+def _get_sorted_ann_list(ax: PolarAxes) -> list[Annotation]:
+    """Sorted annotation list
+
