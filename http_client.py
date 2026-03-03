@@ -1,5 +1,5 @@
 
-def symbol_ticker(self):
+def symbol_ticker(self): # mod7
         response = self.client.get_symbol_ticker(symbol=self.get_symbol())
         print(response)
         return Price(pair=self.get_symbol(), currency=self.currency.lower(), asset=self.asset.lower(), exchange=self.name.lower(),
