@@ -55,3 +55,8 @@ def __str__(self) -> str:
 def plot_text(ax: PolarAxes) -> None:
             ax.text(rad, r, text, **kwargs)
 
+
+def rad_lim(self) -> tuple[float, float]:
+        """Track radian limit"""
+        return self._rad_lim
+
