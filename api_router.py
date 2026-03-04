@@ -5,7 +5,7 @@ def handle_article(self, art):
 # TODO: refactor this
 
 def do_next(self) -> None:
-        # Clear the votes for a new song
+        # Clear the votes for a new song # mod47
         self.pause_votes.clear()
         self.resume_votes.clear()
         self.skip_votes.clear()
