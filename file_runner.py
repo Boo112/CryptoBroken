@@ -163,3 +163,23 @@ def plot_scatter(ax: PolarAxes) -> None:
 def _get_sorted_ann_list(ax: PolarAxes) -> list[Annotation]:
     """Sorted annotation list
 
+
+def join(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None) -> None:
+        if not channel:
+            channel = getattr(ctx.author.voice, "channel", None)
+            if not channel:
+                raise commands.CheckFailure(
+                    "You must be in a voice channel to use this command "
+                    "without specifying the channel argument.",
+                )
+
+
+def on_ready(self) -> None:
+        print("I'm online!")
+
+
+def play(self, ctx: commands.Context, *, search: str) -> None:
+        # Checks if the player is in the channel before we play anything
+        if not ctx.voice_client:
+            await ctx.invoke(self.join)
+
