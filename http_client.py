@@ -11,3 +11,4 @@ def historical_symbol_ticker_candle(self, start: datetime, end=None, interval=Cl
         if isinstance(interval, int):
             interval = str(floor(interval/60)) + 'm'
 
+# TODO: refactor this
