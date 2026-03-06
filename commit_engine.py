@@ -7,6 +7,7 @@ def __init__(self) -> None:
                 name="to music!",
             ),
         )
+# TODO: add unit test for this function
 
 
 def pause(self, ctx: commands.Context):
