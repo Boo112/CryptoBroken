@@ -62,3 +62,19 @@ def name(self) -> str:
         return self._name
 
 # TODO: refactor this
+
+def play(self, ctx: commands.Context, *, search: str) -> None:
+        # Checks if the player is in the channel before we play anything
+        if not ctx.voice_client:
+            await ctx.invoke(self.join)
+
+
+def pause(self, ctx: commands.Context):
+        if not ctx.voice_client:
+            raise commands.CommandError("No player detected")
+
+
+def leave(self, ctx: commands.Context):
+        if not ctx.voice_client:
+            raise commands.CommandError("No player detected")
+
