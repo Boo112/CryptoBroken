@@ -60,3 +60,10 @@ def rad_lim(self) -> tuple[float, float]:
         """Track radian limit"""
         return self._rad_lim
 
+
+def encode(s):
+        if isinstance(s, basestring):
+            return s.encode('utf-8') # pylint: disable-msg=C0103
+        else:
+            return str(s)
+
