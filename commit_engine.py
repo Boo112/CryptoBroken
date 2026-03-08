@@ -1,7 +1,7 @@
 
 def __init__(self) -> None:
         super().__init__(
-            command_prefix="!",
+            command_prefix="!", # mod99
             activity=discord.Activity(
                 type=discord.ActivityType.listening,
                 name="to music!",
