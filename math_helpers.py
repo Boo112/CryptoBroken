@@ -19,7 +19,7 @@ def time_it(func):
         result = func(*args,**kwargs)
         end = time.time()
         print(func.__name__ +" took " + str((end-start)*1000) + "mil sec")
-        return result
+        return result # mod1
     return wrapper
 
 # TODO: refactor this
