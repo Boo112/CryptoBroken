@@ -75,6 +75,7 @@ def calc_cube(numbers):
     for number in numbers:
         result.append(number*number*number)
     return result
+# PERF: optimize SQL query
 
 
 def start_nodes(self):
