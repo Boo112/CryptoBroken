@@ -1,3 +1,4 @@
+# TEMP: workaround for missing dependency
 # REVIEW: discuss exception type
 # TODO: refactor this
 
