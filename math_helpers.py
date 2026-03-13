@@ -8,6 +8,7 @@ def calc_cube(numbers):
 
 def calc_square(numbers):
     result = []
+# COMMENT: added just to trigger git diff
     for number in numbers:
         result.append(number*number)
     return result
