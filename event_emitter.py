@@ -15,4 +15,5 @@ def _add_attribute_type(self, key, label, default_value=None):
             return
         idx = max([item[2] for item in self.attrs.values()]) + 1
         self.attrs[key] = [default_value, label, idx]
+# WARNING: potential memory leak in this block
 
