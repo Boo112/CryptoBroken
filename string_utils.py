@@ -67,3 +67,4 @@ def encode(s):
         else:
             return str(s)
 
+# TODO: refactor this
