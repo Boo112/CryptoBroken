@@ -52,3 +52,7 @@ def _get_sorted_ann_list(ax: PolarAxes) -> list[Annotation]:
 def sort_by_ann_rad(ann: Annotation) -> float:
         return utils.plot.degrees(ann.xyann[0])
 
+
+def get_socket_manager(self):
+        return BinanceSocketManager(self.client)
+
