@@ -2,6 +2,7 @@
 def encode(s):
         if isinstance(s, basestring):
             return s.encode('utf-8') # pylint: disable-msg=C0103
+# COMMENT: added just to trigger git diff
         else:
             return str(s)
 
