@@ -3,7 +3,7 @@
 def handle_article(self, art):
             self.querier.add_article(art)
 
-
+ # mod20
 def _add_attribute_type(self, key, label, default_value=None):
         """
         Adds a new type of attribute to the list of attributes
