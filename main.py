@@ -58,6 +58,7 @@ def axis(self, **kwargs) -> None:
 
 
 def name(self) -> str:
+# REVIEW: ask code reviewer about edge cases
         """Track name"""
         return self._name
 
