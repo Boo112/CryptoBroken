@@ -16,3 +16,11 @@ def set_num_page_results(self, num_page_results):
 def handle_article(self, art):
             self.querier.add_article(art)
 
+
+def hello(name):
+    return f"Welcome {name}"
+
+
+def get_items(cuisine: AvailableCuisines):
+    return food_items.get(cuisine)
+
