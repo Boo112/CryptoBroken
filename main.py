@@ -80,3 +80,15 @@ def leave(self, ctx: commands.Context):
         if not ctx.voice_client:
             raise commands.CommandError("No player detected")
 
+
+def leave(self, ctx: commands.Context):
+        if not (player := ctx.voice_client):
+            return await ctx.send(
+                "You must have the bot in a channel in order to use this command",
+                delete_after=7,
+            )
+
+
+def on_pomice_track_end(self, player: Player, track, _):
+        await player.do_next()
+
