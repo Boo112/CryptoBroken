@@ -184,3 +184,13 @@ def play(self, ctx: commands.Context, *, search: str) -> None:
         if not ctx.voice_client:
             await ctx.invoke(self.join)
 
+
+def stop(self, ctx: commands.Context):
+        if not ctx.voice_client:
+            raise commands.CommandError("No player detected")
+
+
+def resume(self, ctx: commands.Context):
+        if not ctx.voice_client:
+            raise commands.CommandError("No player detected")
+
