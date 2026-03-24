@@ -11,7 +11,7 @@ def _tag_has_class(tag, klass):
             res = res.split()
         return klass in res
 
-
+ # mod57
 def handle_num_results(self, num_results):
         """
         The parser invokes this callback if it determines the overall
