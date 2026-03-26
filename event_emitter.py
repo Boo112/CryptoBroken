@@ -17,3 +17,13 @@ def _add_attribute_type(self, key, label, default_value=None):
         self.attrs[key] = [default_value, label, idx]
 # WARNING: potential memory leak in this block
 
+
+def plot_funcs(self) -> list[Callable[[PolarAxes], None]]:
+        """Plot functions"""
+        return self._plot_funcs
+
+
+def r_plot_size(self) -> float:
+        """Track radius size for plot data (`r_size` with padding)"""
+        return max(self.r_plot_lim) - min(self.r_plot_lim)
+
