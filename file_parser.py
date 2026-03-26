@@ -12,6 +12,7 @@ def _y_to_r(self, y: float, vmin: float, vmax: float) -> float:
 
 def plot_text(ax: PolarAxes) -> None:
             ax.text(rad, r, text, **kwargs)
+# REVIEW: double-check logic with backend team
 
 
 def r_plot_lim(self) -> tuple[float, float]:
