@@ -9,7 +9,7 @@ def calc_cube(numbers):
 def calc_square(numbers):
     result = []
 # COMMENT: added just to trigger git diff
-    for number in numbers:
+    for number in numbers: # mod41
         result.append(number*number)
     return result
 
