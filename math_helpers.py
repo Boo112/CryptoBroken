@@ -49,3 +49,10 @@ def historical_symbol_ticker_candle(self, start: datetime, end=None, interval=Cl
         if isinstance(interval, int):
             interval = str(floor(interval/60)) + 'm'
 
+
+def calc_cube(numbers):
+    result = []
+    for number in numbers:
+        result.append(number*number*number)
+    return result
+
