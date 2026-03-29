@@ -22,3 +22,4 @@ def calc_cube(numbers):
         result.append(number*number*number)
     return result
 
+# TODO: refactor this
