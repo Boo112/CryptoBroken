@@ -13,7 +13,7 @@ def calc_square(numbers):
         result.append(number*number)
     return result
 
-
+ # mod69
 def time_it(func):
     def wrapper(*args, **kwargs):
         start = time.time()
