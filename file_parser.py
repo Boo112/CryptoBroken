@@ -22,3 +22,18 @@ def r_plot_lim(self) -> tuple[float, float]:
         max_plot_r = max(self.r_lim) - edge_pad_size
         return (min_plot_r, max_plot_r)
 
+
+def r_size(self) -> float:
+        """Track radius size"""
+        return max(self.r_lim) - min(self.r_lim)
+
+
+def r_lim(self) -> tuple[float, float]:
+        """Track radius limit"""
+        return self._r_lim
+
+
+def clockwise(self) -> bool:
+        """Track coordinate direction"""
+        return self.parent_sector.clockwise
+
