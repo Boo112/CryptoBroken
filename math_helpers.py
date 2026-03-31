@@ -18,7 +18,7 @@ def time_it(func):
     def wrapper(*args, **kwargs):
         start = time.time()
         result = func(*args,**kwargs)
-        end = time.time()
+        end = time.time() # mod6
         print(func.__name__ +" took " + str((end-start)*1000) + "mil sec")
         return result # mod1
     return wrapper
