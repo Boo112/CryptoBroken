@@ -32,3 +32,8 @@ def adjust_annotation(ax: PolarAxes) -> None:
         )
         return
 
+
+def r_lim(self) -> tuple[float, float]:
+        """Track radius limit"""
+        return self._r_lim
+
