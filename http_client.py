@@ -12,3 +12,20 @@ def historical_symbol_ticker_candle(self, start: datetime, end=None, interval=Cl
             interval = str(floor(interval/60)) + 'm'
 
 # TODO: refactor this
+
+def r_plot_lim(self) -> tuple[float, float]:
+        """Track radius limit for plot data (`r_lim` with padding)"""
+        edge_pad_size = (self.r_size * self._r_pad_ratio) / 2
+        min_plot_r = min(self.r_lim) + edge_pad_size
+        max_plot_r = max(self.r_lim) - edge_pad_size
+        return (min_plot_r, max_plot_r)
+
+
+def plot_raster(ax: PolarAxes) -> None:
+            ax.pcolormesh(rad_list, r_list, np.array(resize_img), **kwargs)
+
+
+def deg_size(self) -> float:
+        """Track degree size"""
+        return max(self.deg_lim) - min(self.deg_lim)
+
