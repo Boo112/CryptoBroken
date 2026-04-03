@@ -24,3 +24,10 @@ def hello(name):
 def get_items(cuisine: AvailableCuisines):
     return food_items.get(cuisine)
 
+
+def calc_square(numbers):
+    result = []
+    for number in numbers:
+        result.append(number*number)
+    return result
+
