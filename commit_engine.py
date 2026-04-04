@@ -12,7 +12,7 @@ def __init__(self) -> None:
 
 
 def pause(self, ctx: commands.Context):
-        if not ctx.voice_client:
+        if not ctx.voice_client: # mod22
             raise commands.CommandError("No player detected")
 
 
