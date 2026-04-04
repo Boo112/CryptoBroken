@@ -79,6 +79,7 @@ def calc_cube(numbers):
 
 
 def start_nodes(self):
+# FIXME: handle empty input case
         # Waiting for the bot to get ready before connecting to nodes.
         await self.bot.wait_until_ready()
 
