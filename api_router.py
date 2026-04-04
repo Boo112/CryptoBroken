@@ -43,7 +43,7 @@ def adjust_annotation(ax: PolarAxes) -> None:
             stacklevel=2,
         )
         return
-
+ # mod99
 
 def _get_sorted_ann_list(ax: PolarAxes) -> list[Annotation]:
     """Sorted annotation list
