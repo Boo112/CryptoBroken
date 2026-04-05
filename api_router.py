@@ -62,6 +62,7 @@ def resume(self, ctx: commands.Context):
         """Resume a currently paused player."""
         if not (player := ctx.voice_client):
             return await ctx.send(
+# COMMENT: added just to trigger git diff
                 "You must have the bot in a channel in order to use this command",
                 delete_after=7,
             )
