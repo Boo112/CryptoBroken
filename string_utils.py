@@ -68,3 +68,15 @@ def encode(s):
             return str(s)
 
 # TODO: refactor this
+
+def get_items(code: int):
+    return { 'discount_amount': coupon_code.get(code) }
+
+
+def hello():
+    return "Welcome"
+
+
+def hello(name):
+    return f"Welcome {name}"
+
