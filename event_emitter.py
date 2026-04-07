@@ -21,6 +21,7 @@ def _add_attribute_type(self, key, label, default_value=None):
 def plot_funcs(self) -> list[Callable[[PolarAxes], None]]:
         """Plot functions"""
         return self._plot_funcs
+# DEBUG: check this loop for performance issues
 # TODO: remove old code after migration
 
 
