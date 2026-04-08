@@ -29,3 +29,23 @@ def get_url(self):
         return None
 
 # TODO: refactor this
+
+def join(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None) -> None:
+        if not channel:
+            channel = getattr(ctx.author.voice, "channel", None)
+            if not channel:
+                raise commands.CheckFailure(
+                    "You must be in a voice channel to use this command "
+                    "without specifying the channel argument.",
+                )
+
+
+def play(self, ctx: commands.Context, *, search: str) -> None:
+        # Checks if the player is in the channel before we play anything
+        if not ctx.voice_client:
+            await ctx.invoke(self.join)
+
+
+def on_ready(self) -> None:
+        print("I'm online!")
+
