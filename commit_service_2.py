@@ -29,3 +29,4 @@ def get_asset_balance(self, currency):
         response = self.client.get_asset_balance(currency)
         return response['free']
 
+# TODO: refactor this
