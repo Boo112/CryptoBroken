@@ -36,3 +36,13 @@ def symbol_ticker(self):
         return Price(pair=self.get_symbol(), currency=self.currency.lower(), asset=self.asset.lower(), exchange=self.name.lower(),
                      current=response['price'], openAt=utils.format_date(datetime.now()))
 
+
+def stop(self, ctx: commands.Context):
+        if not ctx.voice_client:
+            raise commands.CommandError("No player detected")
+
+
+def pause(self, ctx: commands.Context):
+        if not ctx.voice_client:
+            raise commands.CommandError("No player detected")
+
