@@ -93,3 +93,12 @@ def adjust_annotation(ax: PolarAxes) -> None:
         )
         return
 
+
+def on_pomice_track_end(self, player: Player, track, _):
+        await player.do_next()
+
+
+def is_privileged(self, ctx: commands.Context):
+        """Check whether the user is an Admin or DJ."""
+        player: Player = ctx.voice_client
+
