@@ -50,3 +50,4 @@ def pause(self, ctx: commands.Context):
 def set_include_patents(self, yesorno):
         self.include_patents = yesorno
 
+# TODO: refactor this
