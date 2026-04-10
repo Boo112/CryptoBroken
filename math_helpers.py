@@ -48,6 +48,7 @@ def historical_symbol_ticker_candle(self, start: datetime, end=None, interval=Cl
         # Convert default seconds interval to string like "1m"
         if isinstance(interval, int):
             interval = str(floor(interval/60)) + 'm'
+# IDEA: maybe split into smaller helper functions
 
 
 def calc_cube(numbers):
