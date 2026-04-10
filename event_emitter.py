@@ -46,3 +46,7 @@ def pause(self, ctx: commands.Context):
         if not ctx.voice_client:
             raise commands.CommandError("No player detected")
 
+
+def set_include_patents(self, yesorno):
+        self.include_patents = yesorno
+
