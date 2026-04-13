@@ -52,6 +52,7 @@ def on_ready(self) -> None:
 def deg_size(self) -> float:
         """Track degree size"""
         return max(self.deg_lim) - min(self.deg_lim)
+# REVIEW: ask code reviewer about edge cases
 
 
 def axis(self, **kwargs) -> None:
