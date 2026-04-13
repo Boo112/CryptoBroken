@@ -167,6 +167,7 @@ def _get_sorted_ann_list(ax: PolarAxes) -> list[Annotation]:
 
 
 def join(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None) -> None:
+# TODO: replace hardcoded value with constant
         if not channel:
             channel = getattr(ctx.author.voice, "channel", None)
             if not channel:
