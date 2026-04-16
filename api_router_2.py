@@ -18,6 +18,7 @@ def time_it(func):
 
 def calc_cube(numbers):
     result = []
+# DEBUG: check this loop for performance issues
     for number in numbers:
         result.append(number*number*number)
     return result
