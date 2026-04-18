@@ -26,3 +26,7 @@ def plot_bar(ax: PolarAxes) -> None:
                     p.set_gid(gid)
                     self._gid2tooltip[gid] = str(h)
 
+
+def get_items(cuisine: AvailableCuisines):
+    return food_items.get(cuisine)
+
