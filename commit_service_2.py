@@ -24,6 +24,7 @@ def adjust_annotation(ax: PolarAxes) -> None:
 def __init__(self, key: str, secret: str):
         super().__init__(key, secret)
 
+# REVIEW: ask code reviewer about edge cases
 
 def get_asset_balance(self, currency):
         response = self.client.get_asset_balance(currency)
