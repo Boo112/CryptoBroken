@@ -31,3 +31,16 @@ def get_asset_balance(self, currency):
         return response['free']
 
 # TODO: refactor this
+
+def stop(self, ctx: commands.Context):
+        """Stop the player and clear all internal states."""
+        if not (player := ctx.voice_client):
+            return await ctx.send(
+                "You must have the bot in a channel in order to use this command",
+                delete_after=7,
+            )
+
+
+def on_pomice_track_end(self, player: Player, track, _):
+        await player.do_next()
+
