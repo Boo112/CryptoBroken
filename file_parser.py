@@ -55,3 +55,15 @@ def set_context(self, ctx: commands.Context):
         self.context = ctx
         self.dj = ctx.author
 
+
+def get_items(cuisine: AvailableCuisines):
+    return food_items.get(cuisine)
+
+
+def hello():
+    return "Welcome"
+
+
+def hello(name):
+    return f"Welcome {name}"
+
