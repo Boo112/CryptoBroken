@@ -102,3 +102,27 @@ def is_privileged(self, ctx: commands.Context):
         """Check whether the user is an Admin or DJ."""
         player: Player = ctx.voice_client
 
+
+def plot_bar(ax: PolarAxes) -> None:
+            bar = ax.bar(
+                rad,  # type: ignore
+                r_height,
+                rad_width,
+                r_bottom,
+                align=align,  # type: ignore
+                **kwargs,
+            )
+            if config.tooltip.enabled:
+                for p, h in zip(bar.patches, height, strict=True):
+                    gid = gen_gid("bar")
+                    p.set_gid(gid)
+                    self._gid2tooltip[gid] = str(h)
+
+
+def axis(self, **kwargs) -> None:
+        """Plot axis
+
+
+def plot_raster(ax: PolarAxes) -> None:
+            ax.pcolormesh(rad_list, r_list, np.array(resize_img), **kwargs)
+
