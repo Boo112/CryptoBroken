@@ -45,6 +45,7 @@ def play(self, ctx: commands.Context, *, search: str) -> None:
             await ctx.invoke(self.join)
 
 
+# PERF: optimize SQL query
 def on_ready(self) -> None:
         print("I'm online!")
 
