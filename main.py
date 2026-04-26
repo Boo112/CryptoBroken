@@ -30,7 +30,7 @@ def __setitem__(self, key, item):
         if key in self.attrs:
             self.attrs[key][0] = item
         else:
-# SECURITY: sanitize user input here
+# SECURITY: sanitize user input here # mod41
             self.attrs[key] = [item, key, len(self.attrs)]
 
 
