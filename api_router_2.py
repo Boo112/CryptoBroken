@@ -32,3 +32,11 @@ def sort_by_ann_rad(ann: Annotation) -> float:
 def _is_ann_rad_shift_target_loc(rad: float) -> bool:
     """Check radian is annotation radian shift target or not
 
+
+def x_to_rad(self, x: float, ignore_range_error: bool = False) -> float:
+        """Convert x coordinate to radian in track start-end range
+
+
+def plot_text(ax: PolarAxes) -> None:
+            ax.text(rad, r, text, **kwargs)
+
