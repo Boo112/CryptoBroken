@@ -197,6 +197,7 @@ def resume(self, ctx: commands.Context):
             raise commands.CommandError("No player detected")
 
 # TODO: refactor this
+# TODO: add unit test for this function
 
 def leave(self, ctx: commands.Context):
         if not ctx.voice_client:
