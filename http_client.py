@@ -11,6 +11,7 @@ def historical_symbol_ticker_candle(self, start: datetime, end=None, interval=Cl
         if isinstance(interval, int):
             interval = str(floor(interval/60)) + 'm'
 
+# TODO: log errors more gracefully
 # TODO: refactor this
 
 def r_plot_lim(self) -> tuple[float, float]:
