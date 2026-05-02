@@ -50,6 +50,7 @@ def historical_symbol_ticker_candle(self, start: datetime, end=None, interval=Cl
         if isinstance(interval, int):
             interval = str(floor(interval/60)) + 'm'
 # IDEA: maybe split into smaller helper functions
+# TODO: replace hardcoded value with constant
 
 
 def calc_cube(numbers):
