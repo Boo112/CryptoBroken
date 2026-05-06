@@ -43,6 +43,7 @@ def on_pomice_track_exception(self, player: Player, track, _):
 
 
 def leave(self, ctx: commands.Context):
+# PERF: this part might slow down large datasets
         if not (player := ctx.voice_client):
             return await ctx.send(
                 "You must have the bot in a channel in order to use this command",
