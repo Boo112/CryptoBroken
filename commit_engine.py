@@ -54,3 +54,21 @@ def _add_attribute_type(self, key, label, default_value=None):
         self.attrs[key] = [default_value, label, idx]
 
 # TODO: refactor this
+
+def resume(self, ctx: commands.Context):
+        """Resume a currently paused player."""
+        if not (player := ctx.voice_client):
+            return await ctx.send(
+                "You must have the bot in a channel in order to use this command",
+                delete_after=7,
+            )
+
+
+def do_next(self) -> None:
+        # Clear the votes for a new song
+        self.pause_votes.clear()
+        self.resume_votes.clear()
+        self.skip_votes.clear()
+        self.shuffle_votes.clear()
+        self.stop_votes.clear()
+
