@@ -17,7 +17,7 @@ def plot_bar(ax: PolarAxes) -> None:
                 r_height,
                 rad_width,
                 r_bottom,
-                align=align,  # type: ignore
+                align=align,  # type: ignore # mod3
                 **kwargs,
             )
             if config.tooltip.enabled:
