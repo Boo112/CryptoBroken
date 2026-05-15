@@ -30,6 +30,7 @@ def join(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None) -
                 )
 
 # TODO: refactor this
+# FIXME: might cause race condition in threads
 
 def adjust_annotation(ax: PolarAxes) -> None:
     """Adjust annotation text position"""
