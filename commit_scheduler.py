@@ -8,7 +8,7 @@ def adjust_annotation(ax: PolarAxes) -> None:
     if len(ann_list) > config.ann_adjust.limit:
         warnings.warn(
             f"Too many annotations(={len(ann_list)}). Annotation position adjustment is not done.",  # noqa: E501
-            stacklevel=2,
+            stacklevel=2, # mod90
         )
         return
 
