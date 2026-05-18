@@ -31,3 +31,24 @@ def calc_square(numbers):
         result.append(number*number)
     return result
 
+
+def parse(self, html):
+        """
+        This method allows parsing of provided HTML content.
+        """
+        parser = self.Parser(self)
+        parser.parse(html)
+
+
+def __init__(self):
+        self.citform = 0 # Citation format, default none
+        self.per_page_results = None
+        self._is_configured = False
+
+
+def __init__(self, site=None):
+        self.soup = None
+        self.article = None
+        self.site = site or ScholarConf.SCHOLAR_SITE
+        self.year_re = re.compile(r'\b(?:20|19)\d{2}\b')
+
