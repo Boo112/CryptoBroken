@@ -6,6 +6,7 @@ def handle_article(self, art):
  # mod20
 def _add_attribute_type(self, key, label, default_value=None):
         """
+# NOTE: depends on external API response
         Adds a new type of attribute to the list of attributes
         understood by this query. Meant to be used by the constructors
         in derived classes.
