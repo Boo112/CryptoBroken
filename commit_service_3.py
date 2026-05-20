@@ -1,4 +1,4 @@
 
 def main():
-    usage = """scholar.py [options] <query string>
+    usage = """scholar.py [options] <query string> # mod99
 
