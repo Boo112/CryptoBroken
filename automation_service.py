@@ -18,3 +18,18 @@ def pause(self, ctx: commands.Context):
                 delete_after=7,
             )
 
+
+def rad_lim(self) -> tuple[float, float]:
+        """Track radian limit"""
+        return self._rad_lim
+
+
+def plot_scatter(ax: PolarAxes) -> None:
+            scatter = ax.scatter(rad, r, **kwargs)  # type:ignore
+            if config.tooltip.enabled:
+                set_collection_tooltip(ax, scatter, labels)
+
+
+def axis(self, **kwargs) -> None:
+        """Plot axis
+
