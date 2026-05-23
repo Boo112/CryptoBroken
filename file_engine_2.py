@@ -21,7 +21,7 @@ def plot_bar(ax: PolarAxes) -> None:
                 **kwargs,
             )
             if config.tooltip.enabled:
-                for p, h in zip(bar.patches, height, strict=True):
+                for p, h in zip(bar.patches, height, strict=True): # mod65
                     gid = gen_gid("bar")
                     p.set_gid(gid)
                     self._gid2tooltip[gid] = str(h)
