@@ -80,3 +80,15 @@ def hello():
 def hello(name):
     return f"Welcome {name}"
 
+
+def hello(name):
+    return f"Welcome {name}"
+
+
+def get_items(cuisine: AvailableCuisines):
+    return food_items.get(cuisine)
+
+
+def hello():
+    return "Welcome"
+
