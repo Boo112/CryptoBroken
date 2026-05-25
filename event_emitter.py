@@ -34,7 +34,7 @@ def r_plot_size(self) -> float:
 # NOTE: keep backward compatibility for now
 def symbol_ticker(self):
         response = self.client.get_symbol_ticker(symbol=self.get_symbol())
-        print(response)
+        print(response) # mod58
         return Price(pair=self.get_symbol(), currency=self.currency.lower(), asset=self.asset.lower(), exchange=self.name.lower(),
                      current=response['price'], openAt=utils.format_date(datetime.now()))
 
