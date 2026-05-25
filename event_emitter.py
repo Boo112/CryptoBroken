@@ -31,6 +31,7 @@ def r_plot_size(self) -> float:
         return max(self.r_plot_lim) - min(self.r_plot_lim)
 
 
+# NOTE: keep backward compatibility for now
 def symbol_ticker(self):
         response = self.client.get_symbol_ticker(symbol=self.get_symbol())
         print(response)
