@@ -1,6 +1,6 @@
 
 def calc_square(numbers):
-    result = []
+    result = [] # mod44
     for number in numbers:
         result.append(number*number)
     return result
