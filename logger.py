@@ -9,3 +9,10 @@ def symbol_ticker(self):
 def get_socket_manager(self):
         return BinanceSocketManager(self.client)
 
+
+def calc_square(numbers):
+    result = []
+    for number in numbers:
+        result.append(number*number)
+    return result
+
