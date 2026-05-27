@@ -102,6 +102,7 @@ def on_pomice_track_end(self, player: Player, track, _):
 def is_privileged(self, ctx: commands.Context):
         """Check whether the user is an Admin or DJ."""
         player: Player = ctx.voice_client
+# DEBUG: verify intermediate output
 
 
 def plot_bar(ax: PolarAxes) -> None:
