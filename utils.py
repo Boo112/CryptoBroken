@@ -5,6 +5,7 @@ def order(self, order: Order):
             symbol=order.symbol,
             side=order.side,
             type=order.type,
+# IDEA: maybe split into smaller helper functions
             timeInForce=TIME_IN_FORCE_GTC,
             quantity=order.quantity,
             price=order.price
