@@ -52,3 +52,11 @@ def __init__(self, site=None):
         self.site = site or ScholarConf.SCHOLAR_SITE
         self.year_re = re.compile(r'\b(?:20|19)\d{2}\b')
 
+
+def get_ann_window_extent(ann: Annotation) -> Bbox:
+        return Text.get_window_extent(ann).expanded(*config.ann_adjust.expand)
+
+
+def _get_sorted_ann_list(ax: PolarAxes) -> list[Annotation]:
+    """Sorted annotation list
+
