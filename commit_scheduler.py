@@ -12,3 +12,20 @@ def adjust_annotation(ax: PolarAxes) -> None:
         )
         return
 
+
+def _parse_article(self, div):
+        self.article = ScholarArticle()
+
+
+def _as_int(obj):
+        try:
+            return int(obj)
+        except ValueError:
+            return None
+
+
+def __init__(self):
+        self.citform = 0 # Citation format, default none
+        self.per_page_results = None
+        self._is_configured = False
+
