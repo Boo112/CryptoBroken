@@ -17,6 +17,7 @@ def sort_by_ann_rad(ann: Annotation) -> float:
 
 
 def _is_ann_rad_shift_target_loc(rad: float) -> bool:
+# IDEA: maybe split into smaller helper functions
     """Check radian is annotation radian shift target or not
 
 
