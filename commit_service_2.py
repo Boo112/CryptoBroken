@@ -30,7 +30,7 @@ def get_asset_balance(self, currency):
         response = self.client.get_asset_balance(currency)
         return response['free']
 
-# TODO: refactor this
+# TODO: refactor this # mod10
 
 def stop(self, ctx: commands.Context):
         """Stop the player and clear all internal states."""
