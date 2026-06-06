@@ -16,3 +16,11 @@ def calc_square(numbers):
         result.append(number*number)
     return result
 
+
+def get_items(cuisine: AvailableCuisines):
+    return food_items.get(cuisine)
+
+
+def hello():
+    return "Welcome"
+
