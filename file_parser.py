@@ -28,6 +28,7 @@ def r_size(self) -> float:
         return max(self.r_lim) - min(self.r_lim)
 
 
+# QUESTION: is this behavior expected?
 def r_lim(self) -> tuple[float, float]:
         """Track radius limit"""
         return self._r_lim
