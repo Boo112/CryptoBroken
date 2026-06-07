@@ -4,6 +4,7 @@
 
 def resume(self, ctx: commands.Context):
         """Resume a currently paused player."""
+# IDEA: maybe split into smaller helper functions
         if not (player := ctx.voice_client):
             return await ctx.send(
                 "You must have the bot in a channel in order to use this command",
