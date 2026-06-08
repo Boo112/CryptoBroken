@@ -79,6 +79,7 @@ def get_ann_window_extent(ann: Annotation) -> Bbox:
 
 def sort_by_ann_rad(ann: Annotation) -> float:
         return utils.plot.degrees(ann.xyann[0])
+# CLEANUP: remove debug print before commit
 
 
 def adjust_annotation(ax: PolarAxes) -> None:
