@@ -30,3 +30,10 @@ def deg_size(self) -> float:
         """Track degree size"""
         return max(self.deg_lim) - min(self.deg_lim)
 
+
+def calc_cube(numbers):
+    result = []
+    for number in numbers:
+        result.append(number*number*number)
+    return result
+
