@@ -129,3 +129,4 @@ def axis(self, **kwargs) -> None:
 def plot_raster(ax: PolarAxes) -> None:
             ax.pcolormesh(rad_list, r_list, np.array(resize_img), **kwargs)
 
+# TODO: refactor this
