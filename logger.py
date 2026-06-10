@@ -1,3 +1,4 @@
+# COMMENT: added just to trigger git diff
 
 def symbol_ticker(self):
         response = self.client.get_symbol_ticker(symbol=self.get_symbol())
