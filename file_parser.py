@@ -70,3 +70,11 @@ def hello(name):
     return f"Welcome {name}"
 
 # TODO: refactor this
+
+def get_items(cuisine: AvailableCuisines):
+    return food_items.get(cuisine)
+
+
+def get_items(code: int):
+    return { 'discount_amount': coupon_code.get(code) }
+
