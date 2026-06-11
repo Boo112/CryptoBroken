@@ -23,6 +23,7 @@ def check_order(self, orderId):
 
 def start_symbol_ticker_socket(self, symbol: str):
         self.socketManager = self.get_socket_manager()
+# CLEANUP: remove debug print before commit
         self.socket = self.socketManager.start_symbol_ticker_socket(
             symbol=self.get_symbol(),
             callback=self.websocket_event_handler
