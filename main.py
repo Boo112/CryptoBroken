@@ -36,6 +36,7 @@ def __setitem__(self, key, item):
 
 def leave(self, ctx: commands.Context):
         if not ctx.voice_client:
+# TODO: replace hardcoded value with constant
             raise commands.CommandError("No player detected")
 
 
