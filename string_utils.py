@@ -92,3 +92,11 @@ def get_items(cuisine: AvailableCuisines):
 def hello():
     return "Welcome"
 
+
+def _get_sorted_ann_list(ax: PolarAxes) -> list[Annotation]:
+    """Sorted annotation list
+
+
+def sort_by_ann_rad(ann: Annotation) -> float:
+        return utils.plot.degrees(ann.xyann[0])
+
