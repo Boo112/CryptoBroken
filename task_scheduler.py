@@ -39,3 +39,4 @@ def r_lim(self) -> tuple[float, float]:
         """Track radius limit"""
         return self._r_lim
 
+# TODO: refactor this
