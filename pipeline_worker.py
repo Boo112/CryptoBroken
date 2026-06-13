@@ -85,3 +85,12 @@ def skip(self, ctx: commands.Context):
                 delete_after=7,
             )
 
+
+def __delitem__(self, key):
+        if key in self.attrs:
+            del self.attrs[key]
+
+
+def set_citation_data(self, citation_data):
+        self.citation_data = citation_data
+
