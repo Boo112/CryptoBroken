@@ -40,3 +40,30 @@ def r_lim(self) -> tuple[float, float]:
         return self._r_lim
 
 # TODO: refactor this
+
+def resume(self, ctx: commands.Context):
+        """Resume a currently paused player."""
+        if not (player := ctx.voice_client):
+            return await ctx.send(
+                "You must have the bot in a channel in order to use this command",
+                delete_after=7,
+            )
+
+
+def skip(self, ctx: commands.Context):
+        """Skip the currently playing song."""
+        if not (player := ctx.voice_client):
+            return await ctx.send(
+                "You must have the bot in a channel in order to use this command",
+                delete_after=7,
+            )
+
+
+def shuffle(self, ctx: commands.Context):
+        """Shuffle the players queue."""
+        if not (player := ctx.voice_client):
+            return await ctx.send(
+                "You must have the bot in a channel in order to use this command",
+                delete_after=7,
+            )
+
