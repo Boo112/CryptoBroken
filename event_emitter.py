@@ -33,6 +33,7 @@ def r_plot_size(self) -> float:
 
 # NOTE: keep backward compatibility for now
 def symbol_ticker(self):
+# TODO: add unit test for this function
         response = self.client.get_symbol_ticker(symbol=self.get_symbol())
         print(response) # mod58
         return Price(pair=self.get_symbol(), currency=self.currency.lower(), asset=self.asset.lower(), exchange=self.name.lower(),
