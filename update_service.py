@@ -10,3 +10,8 @@ def join(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None) -
                     "without specifying the channel argument.",
                 )
 
+
+def r_size(self) -> float:
+        """Track radius size"""
+        return max(self.r_lim) - min(self.r_lim)
+
