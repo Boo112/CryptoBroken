@@ -1,4 +1,5 @@
 
+# TEMP: workaround for missing dependency
 def symbol_ticker(self): # mod7
         response = self.client.get_symbol_ticker(symbol=self.get_symbol())
         print(response)
