@@ -30,3 +30,14 @@ def plot_bar(ax: PolarAxes) -> None:
 def get_items(cuisine: AvailableCuisines):
     return food_items.get(cuisine)
 
+
+def get_symbol(self):
+        return self.currency + self.asset
+
+
+def cancel_order(self, orderId):
+        return self.client.cancel_order(
+            symbol=self.get_symbol(),
+            orderId=orderId
+        )
+
