@@ -25,3 +25,11 @@ def get_items(cuisine: AvailableCuisines):
 def hello():
     return "Welcome"
 
+
+def handle_article(self, art):
+            self.querier.add_article(art)
+
+
+def set_include_patents(self, yesorno):
+        self.include_patents = yesorno
+
