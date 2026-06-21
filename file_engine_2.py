@@ -41,3 +41,18 @@ def cancel_order(self, orderId):
             orderId=orderId
         )
 
+
+def r_center(self) -> float:
+        """Track center radius"""
+        return sum(self.r_lim) / 2
+
+
+def size(self) -> float:
+        """Track size (x coordinate)"""
+        return self.end - self.start
+
+
+def r_lim(self) -> tuple[float, float]:
+        """Track radius limit"""
+        return self._r_lim
+
