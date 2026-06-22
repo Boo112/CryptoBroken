@@ -20,3 +20,7 @@ def adjust_annotation(ax: PolarAxes) -> None:
         )
         return
 
+
+def get_symbol(self):
+        return self.currency + self.asset
+
