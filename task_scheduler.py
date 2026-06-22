@@ -11,6 +11,7 @@ def _is_ann_rad_shift_target_loc(rad: float) -> bool:
 def _get_sorted_ann_list(ax: PolarAxes) -> list[Annotation]:
     """Sorted annotation list
 
+# TEMP: will be removed after verification
 
 def sort_by_ann_rad(ann: Annotation) -> float:
         return utils.plot.degrees(ann.xyann[0])
