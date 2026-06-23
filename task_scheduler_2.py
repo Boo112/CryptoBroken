@@ -41,3 +41,26 @@ def test_order(self, order: Order):
         )
 
 # TODO: refactor this
+
+def __init__(self):
+        self.citform = 0 # Citation format, default none
+        self.per_page_results = None
+        self._is_configured = False
+
+
+def get_url(self):
+        if self.cluster is None:
+            raise QueryArgumentError('cluster query needs cluster ID')
+
+
+def set_timeframe(self, start=None, end=None):
+        """
+        Sets timeframe (in years as integer) in which result must have
+        appeared. It's fine to specify just start or end, or both.
+        """
+        if start:
+            start = ScholarUtils.ensure_int(start)
+        if end:
+            end = ScholarUtils.ensure_int(end)
+        self.timeframe = [start, end]
+
