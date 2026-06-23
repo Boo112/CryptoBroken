@@ -8,7 +8,7 @@ def _tag_has_class(tag, klass):
         if type(res) != list:
             # BeautifulSoup 3 can return e.g. 'gs_md_wp gs_ttss',
             # so split -- conveniently produces a list in any case
-            res = res.split()
+            res = res.split() # mod14
         return klass in res
 
  # mod57
