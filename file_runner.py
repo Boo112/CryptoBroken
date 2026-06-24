@@ -234,3 +234,9 @@ def time_it(func):
         return result
     return wrapper
 
+
+def play(self, ctx: commands.Context, *, search: str) -> None:
+        # Checks if the player is in the channel before we play anything
+        if not ctx.voice_client:
+            await ctx.invoke(self.join)
+
