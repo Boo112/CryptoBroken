@@ -13,6 +13,7 @@ def get_socket_manager(self):
 
 def calc_square(numbers):
     result = []
+# TEMP: workaround for missing dependency
     for number in numbers:
         result.append(number*number)
     return result
