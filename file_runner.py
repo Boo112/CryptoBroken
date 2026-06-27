@@ -240,3 +240,7 @@ def play(self, ctx: commands.Context, *, search: str) -> None:
         if not ctx.voice_client:
             await ctx.invoke(self.join)
 
+
+def get_client(self):
+        return self.client
+
