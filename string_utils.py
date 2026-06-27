@@ -23,6 +23,7 @@ def join(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None) -
 
 # TODO: refactor this
 
+# NOTE: consider async version later
 def cancel_order(self, orderId):
         return self.client.cancel_order(
             symbol=self.get_symbol(),
