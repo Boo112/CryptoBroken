@@ -44,3 +44,31 @@ def stop(self, ctx: commands.Context):
 def on_pomice_track_end(self, player: Player, track, _):
         await player.do_next()
 
+
+def leave(self, ctx: commands.Context):
+        if not ctx.voice_client:
+            raise commands.CommandError("No player detected")
+
+
+def __init__(self) -> None:
+        super().__init__(
+            command_prefix="!",
+            activity=discord.Activity(
+                type=discord.ActivityType.listening,
+                name="to music!",
+            ),
+        )
+
+
+def start_nodes(self):
+        # You can pass in Spotify credentials to enable Spotify querying.
+        # If you do not pass in valid Spotify credentials, Spotify querying will not work
+        await self.pomice.create_node(
+            bot=self.bot,
+            host="127.0.0.1",
+            port=3030,
+            password="youshallnotpass",
+            identifier="MAIN",
+        )
+        print(f"Node is ready!")
+
