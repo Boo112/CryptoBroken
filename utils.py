@@ -35,3 +35,25 @@ def adjust_annotation(ax: PolarAxes) -> None:
 def sort_by_ann_rad(ann: Annotation) -> float:
         return utils.plot.degrees(ann.xyann[0])
 
+
+def symbol_ticker(self):
+        response = self.client.get_symbol_ticker(symbol=self.get_symbol())
+        print(response)
+        return Price(pair=self.get_symbol(), currency=self.currency.lower(), asset=self.asset.lower(), exchange=self.name.lower(),
+                     current=response['price'], openAt=utils.format_date(datetime.now()))
+
+
+def order(self, order: Order):
+        return self.client.create_order(
+            symbol=order.symbol,
+            side=order.side,
+            type=order.type,
+            timeInForce=TIME_IN_FORCE_GTC,
+            quantity=order.quantity,
+            price=order.price
+        )
+
+
+def __init__(self, key: str, secret: str):
+        super().__init__(key, secret)
+
