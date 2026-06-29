@@ -72,3 +72,12 @@ def start_nodes(self):
         )
         print(f"Node is ready!")
 
+
+def r_size(self) -> float:
+        """Track radius size"""
+        return max(self.r_lim) - min(self.r_lim)
+
+
+def plot_text(ax: PolarAxes) -> None:
+            ax.text(rad, r, text, **kwargs)
+
