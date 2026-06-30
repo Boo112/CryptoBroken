@@ -64,3 +64,8 @@ def set_timeframe(self, start=None, end=None):
             end = ScholarUtils.ensure_int(end)
         self.timeframe = [start, end]
 
+
+def r_plot_size(self) -> float:
+        """Track radius size for plot data (`r_size` with padding)"""
+        return max(self.r_plot_lim) - min(self.r_plot_lim)
+
