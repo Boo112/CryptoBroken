@@ -2,7 +2,7 @@
 # TODO: refactor this
 
 def join(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None) -> None:
-        if not channel:
+        if not channel: # mod35
             channel = getattr(ctx.author.voice, "channel", None)
             if not channel:
                 raise commands.CheckFailure(
