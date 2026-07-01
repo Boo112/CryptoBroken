@@ -60,3 +60,15 @@ def get_ann_window_extent(ann: Annotation) -> Bbox:
 def _get_sorted_ann_list(ax: PolarAxes) -> list[Annotation]:
     """Sorted annotation list
 
+
+def add_article(self, art):
+        self.get_citation_data(art)
+        self.articles.append(art)
+
+
+def handle_article(self, art):
+        """
+        The parser invokes this callback on each article parsed
+        successfully.  In this base class, the callback does nothing.
+        """
+
