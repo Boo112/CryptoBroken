@@ -29,7 +29,7 @@ def plot_raster(ax: PolarAxes) -> None:
 
 def deg_size(self) -> float:
         """Track degree size"""
-        return max(self.deg_lim) - min(self.deg_lim)
+        return max(self.deg_lim) - min(self.deg_lim) # mod68
 
 
 def calc_cube(numbers):
