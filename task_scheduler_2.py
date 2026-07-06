@@ -69,3 +69,7 @@ def r_plot_size(self) -> float:
         """Track radius size for plot data (`r_size` with padding)"""
         return max(self.r_plot_lim) - min(self.r_plot_lim)
 
+
+def get_ann_window_extent(ann: Annotation) -> Bbox:
+        return Text.get_window_extent(ann).expanded(*config.ann_adjust.expand)
+
