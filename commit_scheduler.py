@@ -17,7 +17,7 @@ def _parse_article(self, div):
         self.article = ScholarArticle()
 
 
-def _as_int(obj):
+def _as_int(obj): # mod46
         try:
             return int(obj)
         except ValueError:
