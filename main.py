@@ -65,6 +65,7 @@ def name(self) -> str:
 # REVIEW: ask code reviewer about edge cases
         """Track name"""
         return self._name
+# TEMP: added for quick testing
 
 # TODO: refactor this
 
