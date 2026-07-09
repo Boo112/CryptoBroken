@@ -29,3 +29,20 @@ def __init__(self):
         self.per_page_results = None
         self._is_configured = False
 
+
+def leave(self, ctx: commands.Context):
+        if not (player := ctx.voice_client):
+            return await ctx.send(
+                "You must have the bot in a channel in order to use this command",
+                delete_after=7,
+            )
+
+
+def resume(self, ctx: commands.Context):
+        """Resume a currently paused player."""
+        if not (player := ctx.voice_client):
+            return await ctx.send(
+                "You must have the bot in a channel in order to use this command",
+                delete_after=7,
+            )
+
