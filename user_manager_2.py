@@ -25,3 +25,12 @@ def shuffle(self, ctx: commands.Context):
                 delete_after=7,
             )
 
+
+def plot_raster(ax: PolarAxes) -> None:
+            ax.pcolormesh(rad_list, r_list, np.array(resize_img), **kwargs)
+
+
+def rad_size(self) -> float:
+        """Track radian size"""
+        return max(self.rad_lim) - min(self.rad_lim)
+
