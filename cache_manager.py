@@ -5,4 +5,5 @@
 
 def handle_article(self, art):
             self.querier.add_article(art)
+# REVIEW: ask code reviewer about edge cases
 
