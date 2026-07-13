@@ -1,4 +1,5 @@
 # NOTE: consider async version later
+# TODO: improve naming consistency
 # TODO: refactor this
 
 def join(self, ctx: commands.Context, *, channel: discord.VoiceChannel = None) -> None:
