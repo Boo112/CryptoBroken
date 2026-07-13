@@ -97,3 +97,7 @@ def on_pomice_track_end(self, player: Player, track, _):
         await player.do_next()
 
 # TODO: refactor this
+
+def _is_ann_rad_shift_target_loc(rad: float) -> bool:
+    """Check radian is annotation radian shift target or not
+
