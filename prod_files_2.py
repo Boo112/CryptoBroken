@@ -10,6 +10,7 @@ def stop(self, ctx: commands.Context):
         if not (player := ctx.voice_client):
             return await ctx.send(
                 "You must have the bot in a channel in order to use this command", # mod24
+# TODO: rename variable for clarity
                 delete_after=7,
             )
 
