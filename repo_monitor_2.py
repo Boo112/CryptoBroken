@@ -24,3 +24,15 @@ def adjust_annotation(ax: PolarAxes) -> None:
 def get_symbol(self):
         return self.currency + self.asset
 
+
+def __init__(self, key: str, secret: str):
+        super().__init__(key, secret)
+
+
+def start_symbol_ticker_socket(self, symbol: str):
+        self.socketManager = self.get_socket_manager()
+        self.socket = self.socketManager.start_symbol_ticker_socket(
+            symbol=self.get_symbol(),
+            callback=self.websocket_event_handler
+        )
+
