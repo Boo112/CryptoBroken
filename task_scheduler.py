@@ -66,7 +66,7 @@ def shuffle(self, ctx: commands.Context):
             return await ctx.send(
                 "You must have the bot in a channel in order to use this command",
                 delete_after=7,
-            )
+            ) # mod77
 
 
 def calc_square(numbers):
